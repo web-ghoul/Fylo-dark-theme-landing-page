@@ -1,0 +1,688 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 0;
+    background-color: hsl(218, 28%, 13%);
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: 18px;
+    color: #ddd;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    background-color: hsl(198, 60%, 50%);
+    padding: 18px 60px;
+    color: #fff;
+    font-weight: 700;
+    width: fit-content;
+    border-radius: 30px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    transition: ease-in-out all .3s;
+}
+
+button:hover {
+    background-color: hsl(176, 68%, 64%);
+}
+
+header .contain {
+    padding: 60px 100px;
+    gap: 50px;
+    display: flex;
+    justify-content: space-between;
+    background-color: hsl(217, 28%, 15%);
+    align-items: center;
+}
+
+header .contain .logo img {
+    width: 100%;
+}
+
+header .contain .tools {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+}
+
+header .contain .tools .tool {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .contain .tools .tool a {
+    font-size: 20px;
+    transition: ease-in-out all .3s;
+    color: #ccc;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+}
+
+header .contain .tools .tool a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+section.main-sec {
+    position: relative;
+}
+
+section.main-sec>picture {
+    width: 100%;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+}
+
+section.main-sec>picture img {
+    width: 100%;
+}
+
+section.main-sec .contain {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 200px;
+    padding-top: 0;
+    background-color: hsl(217, 28%, 15%);
+    padding-bottom: 200px;
+}
+
+section.main-sec .contain picture img {
+    width: 100%;
+}
+
+section.main-sec .contain .content {
+    display: grid;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 99;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 55%;
+}
+
+section.main-sec .contain .content h2 {
+    font-size: 35px;
+    color: #fff;
+}
+
+section.grid .contain {
+    display: grid;
+    justify-content: center;
+    align-items: flex-end;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 100px;
+    padding: 20px 250px;
+    background-color: hsl(218, 28%, 13%);
+}
+
+section.grid .contain .box {
+    display: grid;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+    gap: 30px;
+}
+
+section.grid .contain .box .info {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    gap: 20px;
+}
+
+section.grid .contain .box .info h3 {
+    font-size: 25px;
+}
+
+section.stay .contain {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 52% 42%;
+    background-color: hsl(218, 28%, 13%);
+    gap: 50px;
+    padding: 80px 100px;
+}
+
+section.stay .contain picture img {
+    width: 100%;
+}
+
+section.stay .contain .content {
+    display: grid;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+}
+
+section.stay .contain .content h2 {
+    font-size: 35px;
+    color: #fff;
+    width: 75%;
+}
+
+section.stay .contain .content .link {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    width: fit-content;
+    transition: ease-in-out all .3s;
+    position: relative;
+}
+
+section.stay .contain .content .link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: hsl(176, 68%, 64%);
+}
+
+section.stay .contain .content .link:hover::after {
+    background-color: #fff;
+}
+
+section.stay .contain .content .link a {
+    color: hsl(176, 68%, 64%);
+    font-size: 18px;
+}
+
+section.stay .contain .content .link a:hover {
+    color: #fff;
+}
+
+section.test .contain {
+    background-color: hsl(218, 28%, 13%);
+    padding: 80px 100px;
+}
+
+section.test .contain .boxes {
+    position: relative;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 50px;
+}
+
+section.test .contain .boxes>picture {
+    position: absolute;
+    left: -10px;
+    top: -35px;
+}
+
+section.test .contain .box {
+    display: grid;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    background-color: hsl(217, 28%, 15%);
+    padding: 40px 20px 30px;
+    position: relative;
+    z-index: 99;
+}
+
+section.test .contain .box .data {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+section.test .contain .box .data picture img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+section.test .contain .box .data .info {
+    display: grid;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+}
+
+section.test .contain .box .data .info span:first-child {
+    font-weight: 700;
+    color: #fff;
+    font-size: 18px;
+}
+
+section.test .contain .box .data .info span:last-child {
+    font-size: 16px;
+    color: #ddd;
+}
+
+section.get .contain {
+    width: 70%;
+    left: 50%;
+    transform: translateX(-50%) translateY(150px);
+    position: relative;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: hsl(218, 28%, 13%);
+    padding: 40px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+section.get .contain h2 {
+    font-size: 35px;
+    color: #fff;
+}
+
+section.get .contain form {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 65% 30%;
+    align-items: center;
+    gap: 30px;
+}
+
+section.get .contain form input {
+    width: 100%;
+    padding: 18px 80px;
+    background-color: #fff;
+    border-radius: 30px;
+    font-size: 18px;
+    outline: none;
+    position: relative;
+}
+
+section.get .contain form span {
+    position: absolute;
+    bottom: 10px;
+    left: 60px;
+    font-size: 18px;
+    color: hsl(0, 100%, 63%);
+    opacity: 0;
+}
+
+section.get .contain form button {
+    left: auto;
+    transform: none;
+}
+
+footer .contain {
+    padding: 250px 100px 80px;
+    background-color: hsl(216, 53%, 9%);
+    display: grid;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+}
+
+footer .contain .parts {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 80px;
+}
+
+footer .contain .part {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 400px;
+}
+
+footer .contain .icons {
+    display: grid;
+    gap: 30px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+footer .contain .info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+footer .contain ul {
+    display: grid;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+
+footer .contain ul li {
+    font-size: 20px;
+    color: #ddd;
+    transition: ease-in-out all .3s;
+    font-weight: 700;
+}
+
+footer .contain ul li:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+@media (max-width:1200px) {
+    footer .contain .parts {
+        display: grid;
+    }
+    section.get .contain form {
+        grid-template-columns: 50% 45%;
+    }
+}
+
+@media (max-width:992px) {
+    section.get .contain form span {
+        bottom: 10px;
+        left: 40px;
+        font-size: 16px;
+    }
+    p {
+        font-size: 16px;
+    }
+    button {
+        font-size: 16px;
+        padding: 16px 40px;
+        border-radius: 25px;
+    }
+    header .contain {
+        padding: 40px 80px;
+        gap: 40px;
+    }
+    header .contain .tools {
+        gap: 30px;
+    }
+    header .contain .tools .tool a {
+        font-size: 18px;
+    }
+    section.main-sec .contain {
+        gap: 40px;
+        padding: 150px;
+        padding-bottom: 180px;
+    }
+    section.main-sec .contain .content {
+        gap: 25px;
+        width: 70%;
+    }
+    section.main-sec .contain .content h2 {
+        font-size: 30px;
+    }
+    section.grid .contain {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 80px;
+        padding: 20px 250px;
+    }
+    section.grid .contain .box {
+        gap: 30px;
+    }
+    section.grid .contain .box .info {
+        gap: 20px;
+    }
+    section.grid .contain .box .info h3 {
+        font-size: 22px;
+    }
+    section.stay .contain {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+        padding: 60px 80px;
+    }
+    section.stay .contain .content {
+        gap: 25px;
+    }
+    section.stay .contain .content h2 {
+        font-size: 30px;
+        width: 75%;
+    }
+    section.stay .contain .content .link::after {
+        bottom: -5px;
+        height: 2px;
+    }
+    section.stay .contain .content .link a {
+        font-size: 18px;
+    }
+    section.test .contain {
+        padding: 80px 100px;
+    }
+    section.test .contain .boxes {
+        gap: 40px;
+    }
+    section.test .contain .boxes>picture {
+        left: -8px;
+        top: -30px;
+    }
+    section.test .contain .box {
+        gap: 25px;
+        padding: 30px 18px 25px;
+    }
+    section.test .contain .box .data picture img {
+        width: 30px;
+        height: 30px;
+    }
+    section.test .contain .box .data .info span:first-child {
+        font-size: 17px;
+    }
+    section.test .contain .box .data .info span:last-child {
+        font-size: 15px;
+    }
+    section.get .contain {
+        width: 70%;
+        transform: translateX(-50%) translateY(120px);
+        gap: 25px;
+        padding: 30px;
+    }
+    section.get .contain h2 {
+        font-size: 30px;
+    }
+    section.get .contain form {
+        gap: 25px;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-between;
+    }
+    section.get .contain form input {
+        padding: 16px 60px;
+        border-radius: 25px;
+        font-size: 16px;
+    }
+    footer .contain {
+        padding: 220px 80px 80px;
+        gap: 25px;
+    }
+    footer .contain .parts {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 80px;
+    }
+    footer .contain .part {
+        gap: 25px;
+        width: 300px;
+    }
+    footer .contain .icons {
+        gap: 25px;
+    }
+    footer .contain .info {
+        gap: 18px;
+    }
+    footer .contain ul {
+        gap: 25px;
+    }
+    footer .contain ul li {
+        font-size: 18px;
+    }
+}
+
+@media (max-width:768px) {
+    section.get .contain form span {
+        bottom: 70px;
+        left: 20px;
+        font-size: 12px;
+    }
+    p {
+        font-size: 15px;
+    }
+    button {
+        font-size: 15px;
+        padding: 12px 30px;
+        border-radius: 20px;
+    }
+    header .contain {
+        padding: 20px 40px;
+        gap: 30px;
+    }
+    header .contain .logo img {
+        width: 50%;
+    }
+    header .contain .tools {
+        gap: 20px;
+    }
+    header .contain .tools .tool a {
+        font-size: 15px;
+    }
+    section.main-sec .contain {
+        gap: 30px;
+        padding: 60px;
+        padding-bottom: 140px;
+    }
+    section.main-sec .contain .content {
+        gap: 20px;
+        width: 100%;
+    }
+    section.main-sec .contain .content h2 {
+        font-size: 25px;
+    }
+    section.grid .contain {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 60px;
+        padding: 20px 60px;
+    }
+    section.grid .contain .box {
+        gap: 20px;
+    }
+    section.grid .contain .box .info {
+        gap: 15px;
+    }
+    section.grid .contain .box .info h3 {
+        font-size: 20px;
+    }
+    section.stay .contain {
+        gap: 30px;
+        padding: 40px 60px;
+    }
+    section.stay .contain .content {
+        gap: 20px;
+    }
+    section.stay .contain .content h2 {
+        font-size: 25px;
+        width: 100%;
+    }
+    section.stay .contain .content .link::after {
+        bottom: -5px;
+        height: 2px;
+    }
+    section.stay .contain .content .link a {
+        font-size: 16px;
+    }
+    section.test .contain {
+        padding: 60px 80px;
+    }
+    section.test .contain .boxes {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+    section.test .contain .boxes>picture {
+        left: -8px;
+        top: -30px;
+    }
+    section.test .contain .box {
+        gap: 25px;
+        padding: 30px 18px 25px;
+    }
+    section.test .contain .box .data picture img {
+        width: 20px;
+        height: 20px;
+    }
+    section.test .contain .box .data .info span:first-child {
+        font-size: 15px;
+    }
+    section.test .contain .box .data .info span:last-child {
+        font-size: 12px;
+    }
+    section.get .contain {
+        width: 70%;
+        transform: translateX(-50%) translateY(100px);
+        gap: 20px;
+        padding: 20px;
+    }
+    section.get .contain h2 {
+        font-size: 25px;
+    }
+    section.get .contain form {
+        gap: 25px;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: space-between;
+    }
+    section.get .contain form input {
+        padding: 12px 40px;
+        border-radius: 25px;
+        font-size: 16px;
+    }
+    section.get .contain form button {
+        width: 100%;
+    }
+    footer .contain {
+        padding: 200px 80px 80px;
+        gap: 25px;
+    }
+    footer .contain .parts {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 60px;
+    }
+    footer .contain .part {
+        gap: 20px;
+        width: 200px;
+    }
+    footer .contain .icons {
+        gap: 20px;
+    }
+    footer .contain .info {
+        gap: 16px;
+    }
+    footer .contain ul {
+        gap: 20px;
+    }
+    footer .contain ul li {
+        font-size: 16px;
+    }
+}
